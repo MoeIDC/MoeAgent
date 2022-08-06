@@ -63,7 +63,8 @@ void signal_async_wait(signal_set &sig, Service &service, bool &restart) {
 
 int main(int argc, const char *argv[]) {
     try {
-        Log::log("Welcome to trojan " + Version::get_version(), Log::FATAL);
+        Log::log("Welcome to MoeAgent " + Version::get_version(), Log::FATAL);
+        Log::log("Powered by MoeIDC");
         string config_file;
         string log_file;
         string keylog_file;
